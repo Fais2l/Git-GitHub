@@ -29,6 +29,8 @@ The Three Areas:
 
 **Purpose:** This is where you create, modify, and delete files before telling Git about the changes.
 
+![Working Directory Diagram](Images/woriking-directory.jpg)
+
 ## :rocket: 2 Staged Area (Index)
 
 **What it is:** A temporary holding area that prepares your changes for the next commit.
@@ -36,6 +38,8 @@ The Three Areas:
 **In this diagram:** The middle section is empty, but when you run `git add file.txt`, the file moves here.
 
 **Purpose:** Allows you to selectively choose which changes to include in your next commit. You can have multiple changes in your working directory but only stage some of them.
+
+![Staged Diagram](Images/git-commands-stage.jpg)
 
 ## :gear: 3 Commit (Repository)
 
@@ -45,7 +49,7 @@ The Three Areas:
 
 **Purpose:** Creates a snapshot of your project at a specific point in time with a descriptive message.
 
-
+![Commit Digram](Images/git-commands-commit.jpg)
 # Git Commands
 
 Throughout this Git and GitHub course, I have learned a lot of important commands that are essential for version control and collaboration. These commands form the foundation of working with Git efficiently.
