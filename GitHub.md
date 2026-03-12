@@ -60,6 +60,8 @@ git pull
 
 Downloads changes from GitHub (upstream) to your computer (downstream) and merges them with your local code.m (Remote Repository)
 
+![upstream and downstream Digram](Images/Push_Pull.png)
+
 ## VSCode with GitHub
 
 VSCode (Visual Studio Code) is a code editor that integrates seamlessly with GitHub, making it easy to manage your repositories directly from the editor.
