@@ -147,3 +147,9 @@ Switches to a different branch, moving your working directory to that branch's c
 git branch -d <name>
 ```
 Deletes a branch with the specified name from your repository.
+
+# :globe_with_meridians: Resources
+
+- [Git Cheat Sheet](https://git-scm.com/cheat-sheet)
+- [GitHub Learning Lab](https://learn.github.com/)
+- [Working with GitHub in VS Code](https://code.visualstudio.com/docs/sourcecontrol/github)
