@@ -59,3 +59,46 @@ git pull
 ```
 
 Downloads changes from GitHub (upstream) to your computer (downstream) and merges them with your local code.m (Remote Repository)
+
+## VSCode with GitHub
+
+VSCode (Visual Studio Code) is a code editor that integrates seamlessly with GitHub, making it easy to manage your repositories directly from the editor.
+
+---
+
+## VSCode with GitHub
+
+Throughout this course, I learned how to connect VSCode with GitHub and use its integrated features to manage my repositories more efficiently.
+
+---
+
+## How to Link VSCode with GitHub
+
+I learned how to link VSCode to my GitHub account, which allows me to:
+- Clone repositories directly from GitHub into VSCode
+- Push and pull changes without using terminal commands
+- View my GitHub repositories in the editor
+- Authenticate with my GitHub credentials
+
+---
+
+## GitHub UI in VSCode
+
+I learned about the built-in GitHub interface in VSCode, which includes:
+- **Source Control Panel**: View changes, stage files, and commit from the UI
+- **GitHub Pull Requests Extension**: Create and manage pull requests
+- **Repository Explorer**: Browse files and folders from my repository
+- **Integrated Terminal**: Run Git commands directly in VSCode
+
+---
+
+## Using GitHub Integration in VSCode
+
+I learned how to use VSCode's GitHub integration to:
+- Authenticate my GitHub account in the editor
+- Clone repositories to my local machine
+- Make changes to files visually
+- Stage and commit changes through the UI
+- Push changes to GitHub
+- Create pull requests
+- Manage branches visually without terminal commands
