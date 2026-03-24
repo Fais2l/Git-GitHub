@@ -1,7 +1,17 @@
-# :books:Git-GitHub
+# :books:Git & GitHub Course – Tuwaiq Academy
 
-Throughout this Git and GitHub course, I have learned the fundamental concepts and workflows that are essential for modern software development. This document outlines what I've learned about Git, its core concepts, and the three-stage workflow that forms the backbone of version control.
 
+This repository was created as part of my training in the Git and GitHub course at Tuwaiq Academy. It documents the key concepts, commands, and workflows I learned during the course.
+
+The goal of this repository is to serve as a simple and practical reference for version control using Git, including working with repositories, commits, branches, and collaboration using GitHub.
+
+It covers :
+- Git fundamentals and concepts  
+- The three-stage workflow (Working Directory, Staging Area, Repository)  
+- Essential Git commands  
+- Branching and basic collaboration  
+
+This project reflects my learning journey and can be used as a quick guide for beginners who are starting with Git and GitHub.
 ### What is Git?
 
 Git is a **distributed version control system** that allows developers to track changes in their code over time. Unlike centralized version control systems, Git enables every developer to have a complete copy of the project history on their local machine. This makes Git powerful for collaboration, branching, and maintaining a complete audit trail of all changes made to a project.
