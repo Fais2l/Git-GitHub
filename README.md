@@ -64,7 +64,7 @@ The Three Areas:
 
 Throughout this Git and GitHub course, I have learned a lot of important commands that are essential for version control and collaboration. These commands form the foundation of working with Git efficiently.
 
-### git init
+### Git init
 ```Git
 git init
 ```
@@ -77,21 +77,21 @@ The `git init` command is the **first command** you use when starting a new Git 
 - Prepares your project for version control
 - Initializes your local repository
 
-### git status
+### Git status
 
 ```git
 git status
 ```
 Shows the current state of your working directory and staging area, displaying which files have changes.
 
-## git add
+## Git add
 
 ```git
 git add filename
 ```
 Moves changes from your working directory to the staging area, preparing them for commit.
 
-## git commit
+## Git commit
 
 ```git
 git commit -m "message"
@@ -99,7 +99,7 @@ git commit -m "message"
 
 Saves your staged changes to the Git repository with a descriptive message about what changed.
 
-## git log
+## Git log
 
 ```git
 git log
@@ -107,13 +107,13 @@ git log
 
 Displays the commit history of your repository, showing all previous commits with messages and timestamps.
 
-## git log --oneline 
+## Git log --oneline 
 ```git
 git log --oneline
 ```
 Displays the commit history in a compact, single-line format showing commit hash and message.
 
-## git log --oneline --graph
+## Git log --oneline --graph
 ```git
 git log --oneline --graph
 ```
@@ -121,14 +121,14 @@ Displays the commit history in a compact format with a visual graph showing the 
 
 ## commands showing details
 
-## git diff
+## Git diff
 
 ```git
 git diff
 ```
 Shows the differences between your working directory and the staging area, displaying what has changed in your files.
 
-## git show
+## Git show
 
 ```git
 git show 
@@ -137,28 +137,130 @@ Displays the details of a specific commit, including the changes made, author, a
 
 # Commands for Managing Branches
 
-# git branch
+# Git branch
 
 ```git
 git branch <name>
 ```
 Creates a new branch with the specified name in your repository.
 
-## git checkout
+Example :
+
+Create a Branch
+```bash
+git branch feature-branch
+```
+
+![Commit Digram](Images/git-commands-branch.jpg)
+
+Creat a branch named Feature-branch
+
+## Git checkout
 
 ```git
 git checkout <branch-name>
 ```
 Switches to a different branch, moving your working directory to that branch's code.
 
-## git branch -d
+ >[!NOTE] 
+ >The `HEAD` always refers to "where-you-at" currently, so when you use the `git checkout` command, you change the position of the `HEAD` from pointing to the `master` to pointing to the new branch, e.g, `feature-branch` for example. Which means any commit is currently made will be created on the `feature-branch`.
+
+
+```bash
+git checkout -b Newbranch-name
+```
+Create and switch to a new Branch and immediately switch to it.
+
+## Git branch -d
 
 ```git
 git branch -d <name>
 ```
 Deletes a branch with the specified name from your repository.
 
-# :globe_with_meridians: Resources
+## Merge Branches 
+
+Git merge
+
+```git
+ git merge <branch name>
+````
+Combines changes from one branch into another.
+
+Example :
+
+```bash
+ git merge feature-branch
+```
+
+![Commit Digram](Images/git-commands-merge.jpg)
+Merge a branch into the current Branch.   
+
+# 🔀 Merge Types in Git
+When working with branches, Git provides different ways to combine changes. The two most common types are:
+
+## 🚀 Fast-Forward Merge
+
+A `fast-forward` merge happens when the target branch has not changed since the new branch was created.
+
+### What happens?
+- Git simply moves the pointer forward
+- No new commit is created
+- History remains linear (straight line)
+
+## :rocket:Example of Fast-Forward Merge
+
+```text
+Before
+
+main:    A --- B
+               \
+                C --- D
+
+Feature 
+
+After (fast-forward):
+
+main:    A --- B --- C --- D
+```
+>[!TIP]
+>Fast-forward merges keep your history clean and simple.
+
+🔀 3-Way Merge (Non Fast-Forward)
+
+A `3-way merge` happens when both branches have new commits.
+
+What happens?
+Git creates a new merge commit
+Combines changes from both branches
+Uses a common ancestor to merge
+## 🔀 Example of 3 Ways to Merge in Git
+```text
+Before
+
+main:    A --- B --- E
+               \
+                C --- D
+
+feature
+
+After (3-way merge)
+main:    A --- B --- E ------- M
+               \             /
+                C --- D ----
+```
+ Why is it called `3-way`?
+
+Git uses:
+
+The last common commit (ancestor)
+The main branch
+The feature branch
+
+>[!NOTE]
+>A merge commit (M) is created to combine both histories. 
+
+# globe_with_meridians: Educational Resources
 - [Git & GitHub Guide – SAFCSP Team](https://github.com/SAFCSP-Team/git-github.git)
 - [Git Cheat Sheet](https://git-scm.com/cheat-sheet)
 - [GitHub Learning Lab](https://learn.github.com/)
