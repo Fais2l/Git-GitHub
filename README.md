@@ -260,7 +260,7 @@ The feature branch
 >[!NOTE]
 >A merge commit (M) is created to combine both histories. 
 
-# globe_with_meridians: Educational Resources
+# :globe_with_meridians: Educational Resources
 - [Git & GitHub Guide – SAFCSP Team](https://github.com/SAFCSP-Team/git-github.git)
 - [Git Cheat Sheet](https://git-scm.com/cheat-sheet)
 - [GitHub Learning Lab](https://learn.github.com/)
